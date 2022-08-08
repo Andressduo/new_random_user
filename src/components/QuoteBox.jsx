@@ -6,8 +6,9 @@ const QuoteBox = ({user,color}) => {
     
     <article style={{color:`${color}`}} className="Container__card">
         <p className="Container__cite">
+            <strong>Cite:</strong>
             <i className="fa-solid fa-quote-left"></i>
-            <strong>Cite:</strong>{user.quote}
+            {user.quote}
         </p>
         <div className="container__author">
         <h1><strong>Author:</strong>{user.author}</h1>
